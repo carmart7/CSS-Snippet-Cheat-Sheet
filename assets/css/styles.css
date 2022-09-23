@@ -1,7 +1,7 @@
 :root {
     --pink_color: rgb(250, 6, 250);
     --white_color: rgb(255, 255, 255);
-    --grey_color: rgba(99, 95, 95, 0.986)
+    --grey_color: rgba(65, 64, 64, 0.986);
 }
 
 body {
@@ -29,13 +29,19 @@ h1 {
     color: var(--pink_color);
 }
 
+section p {
+    padding-bottom: 5px;
+    margin-top: -10px;
+}
+
 #top_paragraph {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+    padding-bottom: 25px;
 }
 
-h3 {
+h2 {
     border: 1px solid var(--white_color);
     border-radius: 2px;
     position: relative;
@@ -62,21 +68,50 @@ section {
     flex: 0 0 25%;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 10px;
 }
 
 code {
     color: var(--white_color);
-    display: block;
+    display: flex;
     background-image: linear-gradient(to bottom,  rgb(109, 8, 134), rgb(162, 33, 173));
     border-radius: 5px;
     padding: 8px;
     height: 100%;
+    line-height: 150%;
+    justify-content: left;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
 }
 
-footer {
+footer h3{
     color: var(--pink_color);
     margin: 20px;
     display: block;
     text-align: center;
 }
+
+code:hover {
+    user-select: all;
+    /* box-shadow: inset 0px 0px 8px #fff, 0 0 15px #fff; */
+}
+
+section:hover {
+    box-shadow: inset 0px 0px 8px #fff, 0 0 15px #fff;
+}
+section:hover h2{
+    box-shadow: inset 0px 0px 8px #fff, 0 0 15px #fff;
+}
+
+@media screen and  (max-width: 992px){
+    section {
+        flex: 0 0 40%;
+    }
+}
+
+@media screen and  (max-width: 768px){
+    section {
+        flex: 0 0 90%;
+    }
+}
+

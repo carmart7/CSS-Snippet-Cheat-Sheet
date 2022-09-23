@@ -18,53 +18,82 @@
         </div>
         <div class="card-holder">
             <section>
-                <h3>Flexbox Row</h3>
+                <h2>Flexbox Row</h2>
                 <p class="pink_text">Use these three properties to create a Flexbox row layout.</p>
                 <code>
-                    code place holder
+                    .row { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: row;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap;<br>
+                    }
                 </code>
             </section>
             <section>
-                <h3>Flexbox Column</h3>
+                <h2>Flexbox Column</h2>
                 <p class="pink_text">Use this to create a Flexbox column layout.</p>
                 <code>
-                    code place holder
+                    .colum  { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br>
+                    }
                 </code>
             </section>
             <section>
-                <h3>CSS Grid Layout</h3>
+                <h2>CSS Grid Layout</h2>
                 <p class="pink_text">Build a 12-column layout using CSS Grid.</p>
                 <code>
-                    code place holder
+                    .grid {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: repeat(12, 1fr);<br>
+                    }
                 </code>
             </section>
 
             <section>
-                <h3>Linear Gradients</h3>
+                <h2>Linear Gradients</h2>
                 <p class="pink_text">This will create a background linear gradient from top to bottom</p>
                 <code>
-                    code place holder <br>code place holder <br>code place holder <br>code place holder <br>
+                    .linear-gradient-background {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;background-image: linear-gradient(<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(232, 102, 236, 0.3) 0%,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(232, 102, 236, 0.3) 100%,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;);<br>
+                    }<br>
                 </code>
             </section>
             <section>
-                <h3>Box Transition Glow</h3>
+                <h2>Box Transition Glow</h2>
                 <p class="pink_text">Use transition and box shadows to glow on hover</p>
                 <code>
-                    code place holder
+                    .code-card .card-header {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 8px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;transition: all 0.5s ease-in-out;<br>
+                      }<br>
+                      
+                      .code-card:hover,<br>
+                      .code-card:hover .card-header {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;box-shadow: inset 0px 0px 8px<br>
+                      rgba(232, 102, 236. 1), 0 0 15px<br>
+                      rgba(232, 102, 236, 1);<br>
+                      }<br>
                 </code>
             </section>
             <section>
-                <h3>Overlay Card with Title</h3>
+                <h2>Overlay Card with Title</h2>
                 <p class="pink_text">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
                 <code>
-                    code place holder
+                    .card-header {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;margin-top: -20px<br>
+                      }<br>
                 </code>
             </section>
             
         </div>
     </main>
     <footer>
-        <h2>Made with &#x2764 and CSS</h2>
+        <h3>Made with <span>&#x1F496</span> and CSS</h3>
     </footer>
 </body>
 </html>
